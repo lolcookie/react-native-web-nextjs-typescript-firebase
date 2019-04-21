@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   }
 })
 
-export default (props: any) => (
+export default () => (
   <View style={styles.container}>
     <Text style={styles.text}>Welcome to Next.js!</Text>
   </View>
