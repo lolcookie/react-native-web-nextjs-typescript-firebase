@@ -9,6 +9,6 @@ module.exports = withTypescript({
     }
 
     return config
-  }
-  distDir: '../dist/functions/next',
+  },
+  distDir: '../dist/functions/next'
 })
