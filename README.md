@@ -1,46 +1,54 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-react-native-web)
+# Quickstart
 
-## How to use
+Set up firebase:
 
-### Using `create-next-app`
+- install Firebase Tools: `npm i -g firebase-tools`
+- create a project through the [firebase web console](https://console.firebase.google.com/)
+- grab the projects ID from the web consoles URL: https://console.firebase.google.com/project/<projectId>
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+`touch .firebaserc`
 
-```bash
-npx create-next-app --example with-react-native-web
-# or
-yarn create next-app --example with-react-native-web with-react-native-web-app
+```
+{
+  "projects": {
+    "default": "<project-name-here>"
+  }
+}
 ```
 
-### Download manually
+- login to the Firebase CLI tool with `firebase login`
 
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-react-native-web
-cd with-react-native-web
-```
-
-Install it and run:
+#### Install project:
 
 ```bash
 npm install
-npm run dev
-# or
-yarn
-yarn dev
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
+#### Run Next.js development:
 
 ```bash
-now
+npm run dev
 ```
 
-## The idea behind the example
+#### Run Firebase locally for testing:
 
-This example features how to use [react-native-web](https://github.com/necolas/react-native-web) to bring the platform-agnostic Components and APIs of React Native to the web.
+```
+npm run serve
+```
 
-> **High-quality user interfaces**: React Native for Web makes it easy to create fast, adaptive web UIs in JavaScript. It provides native-like interactions, support for multiple input modes (touch, mouse, keyboard), optimized vendor-prefixed styles, built-in support for RTL layout, built-in accessibility, and integrates with React Dev Tools.
->
-> **Write once, render anywhere**: React Native for Web interoperates with existing React DOM components and is compatible with the majority of the React Native API. You can develop new components for native and web without rewriting existing code. React Native for Web can also render to HTML and critical CSS on the server using Node.js.
+#### Deploy it to the cloud with Firebase:
+
+```bash
+npm run deploy
+```
+
+#### Clean dist folder
+
+```bash
+npm run clean
+```
+
+# More Info
+
+https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting-and-typescript
+https://github.com/zeit/next.js/tree/master/examples/with-react-native-web
