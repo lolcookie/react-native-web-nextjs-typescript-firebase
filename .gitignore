@@ -2,3 +2,7 @@
 .next
 node_modules
 *.log
+dist/
+# Firebase cache
+.firebase/
+.firebaserc
