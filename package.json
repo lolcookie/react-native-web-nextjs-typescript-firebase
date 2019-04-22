@@ -16,9 +16,9 @@
     "build-app": "next build \"app\"",
     "build-public": "cpx \"public/**/*.*\" \"dist/public\" -C",
     "build-functions": "tsc --project functions",
-    "lint-app": "tslint --project app",
+    "lint-app": "eslint app",
     "typecheck-app": "tsc --project app",
-    "lint-functions": "tslint --project functions",
+    "lint-functions": "eslint \"functions/**/*.ts\"",
     "copy-deps": "cpx \"*{package.json,package-lock.json,yarn.lock}\" \"dist/functions\" -C",
     "install-deps": "cd \"dist/functions\" && npm i --ignore-scripts",
     "firebase": "firebase"
@@ -38,15 +38,17 @@
   "devDependencies": {
     "@types/next": "^8.0.3",
     "@types/react": "^16.8.13",
-    "@typescript-eslint/eslint-plugin": "^1.6.0",
-    "@typescript-eslint/parser": "^1.6.0",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
     "cpx": "1.5.0",
     "cross-env": "5.2.0",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
     "firebase-tools": "^6.1.0",
+    "prettier": "^1.17.0",
     "rimraf": "2.6.2",
-    "tslint": "^5.11.0",
-    "tslint-react": "^3.6.0",
     "typescript": "^3.2.0"
   }
 }

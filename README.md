@@ -50,5 +50,11 @@ npm run clean
 
 # More Info
 
+Firebase + nextjs
 https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting-and-typescript
+
+Nextjs + react-native-web
 https://github.com/zeit/next.js/tree/master/examples/with-react-native-web
+
+Typescript + eslint
+https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb
