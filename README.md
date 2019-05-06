@@ -58,3 +58,11 @@ https://github.com/zeit/next.js/tree/master/examples/with-react-native-web
 
 Typescript + eslint
 https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb
+
+## Troubleshooting
+
+#### React hooks can only be called inside a function error
+
+```
+npm run clean
+```
